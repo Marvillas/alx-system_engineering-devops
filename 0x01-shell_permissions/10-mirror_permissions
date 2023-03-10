@@ -1,7 +1,2 @@
 #!/bin/bash
-
-#get the mode of the file
-file_mode=$(stat -c %a olleh)
-
-#set the mode of hello to olleh mode
-chmod $file_mode hello
+chmod --reference=olleh hello
